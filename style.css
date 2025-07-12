@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+  position-top: 110px;
+}
+
+.main {
+    width: 100%;
+    background-color: azure;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    font-family: sans-serif;
+    padding-top: 110px; /* Add space for fixed navbar */
+}
+
+/* Navbar improvements for better visibility */
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar .logo {
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3px;
+    margin-left: -2px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: none;
+}
+
+ul {
+    margin-top: -4px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+}
+
+ul li a:hover {
+    color: #fff;
+    background: rgb(230, 104, 59);
+}
+
+.infor {
+  margin-left: 7%;
+  margin-top: 6%;
+}
+
+.infor h1{
+  font-size: 65px;
+  color: rgb(36, 132, 30);
+}
+
+
+.infor h3{
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+.infor span{
+  color: rgb(230, 104, 59);
+}
+
+.infor a{
+  text-decoration: none;
+  color: #fff;
+  background: rgb(36, 32, 30);
+  margin: 26px 0;
+  padding: 10px 18px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: .4s ease;
+}
+
+.infor a:hover{
+  background: rgb(59, 174, 209);
+}
+
+/* Adjust image for better placement and size */
+.image {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1;
+}
+
+
+.image img{
+  position: absolute;
+height: 140;
+left: 40;
+transform: translate(-50%);
+bottom: 0;
+transition: left 2s ease;
+
+}
+.image img:hover{
+  left: 50%;
+}
+
+.icons a{
+  text-decoration: none;
+  color: #000;
+}
+
+.icons ion-icon{
+  margin-left:7%;
+  color: #000;
+  margin: -60px;
+  font-size: 40px;
+  transition: 0.4s ease;
+}
+.icons ion-icon:hover{
+  color: rgb(59, 174, 209);
+}
+
+.image img.me {
+  position: relative;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  object-fit: cover;
+  background: #fff;
+  border: 4px solid #fff;
+  transition: transform 0.4s;
+}
+
+.image img.me:hover {
+  transform: scale(1.05);
+}
